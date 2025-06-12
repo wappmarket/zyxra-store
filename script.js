@@ -1,1 +1,1 @@
-function filterItems(category) { ... }
+function filterItems(category) { const items = document.querySelectorAll('.item'); items.forEach(item => { item.style.display = category === 'all' || item.classList.contains(category) ? 'block' : 'none'; }); }
